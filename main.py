@@ -53,10 +53,6 @@ def xmlize(event_root, writer):
     :param writer: a file open for writing
     :rtype: None
     """
-    naming = False
-    # male_names_list, male_short_names_list = [], []
-    # female_names_list, female_short_names_list = [], []
-    names_list, short_names_list = [], []
     for child in event_root:
         if ((child.tag == 'weaponBlueprint') and
                 ("DRONE" not in child.attrib['name'])):
