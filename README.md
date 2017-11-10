@@ -1,13 +1,19 @@
-# FTL modding: place weaponBlueprint in flavorType -- see the description on the main HUD 
+# FTL modding: See a weapon's description on the main HUD.
+This program assumes you are familiar with Advanced Slipstream tags and creating mods with proper folder hierarchy and whatnot.
+
 For use with FTL: Faster Than Light blueprints.xml-type files.
 
 As you may know, weapons on FTL's in-game HUD only show stats. But what if you wanted to see the description there too? :wink:
 
+...
+
 Takes in a file full of weaponBlueprints and outputs slipstream tags that place the desc of the weaponBlueprint into its flavorType field (uses a technique to create paragraph structure, see image linked below).
 
-For example, given a desc:
+For example, given a weaponBlueprint with a desc:
 ```
-<desc>Modified projectile weapon that fires 3 shield piercing antipersonnel crystals. Cannot damage ships' structural integrity or deplete shields.</desc>
+<weaponBlueprint name="BA_CRYSTAL_LIGHT_1">
+	<desc>Modified projectile weapon that fires 3 shield piercing antipersonnel crystals. Cannot damage ships' structural integrity or deplete shields.</desc>
+</weaponBlueprint>
 ```
 
 Results in this generated:
