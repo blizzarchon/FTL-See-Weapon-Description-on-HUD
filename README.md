@@ -5,8 +5,6 @@ For use with FTL: Faster Than Light blueprints.xml-type files.
 
 As you may know, weapons on FTL's in-game HUD only show stats. But what if you wanted to see the description there too? :wink:
 
-...
-
 Takes in a file full of weaponBlueprints and outputs slipstream tags that place the desc of the weaponBlueprint into its flavorType field (uses a technique to create paragraph structure, see image linked below).
 
 For example, given a weaponBlueprint with a desc:
@@ -28,7 +26,7 @@ What it looks like in-game: https://i.imgur.com/SRqlDci.png
 
 ***Additional Notes:***
 
-Will probably not work as intended if desc has forced "paragraph" structure.
+If desc has forced "paragraph" structure, this program will probably not generate the intended result.
 
-Source file must have a proper root element -- FTL's files in general ignore this, but you need it here otherwise parsing doesn't work.
+Source file must have a proper root element and not be malformed in any other way -- FTL's files in general ignore this, but you need to make sure the file isn't malformed otherwise parsing will fail.
 
