@@ -60,13 +60,17 @@ def xmlize(event_root, writer):
 
 
 if __name__ == '__main__':
-
-    reading = input("\nEnter name of file in this directory to read from:\n")
+    print("FTL modding: See Weapon Description on HUD\n")
+    print("Notes:\n \
+           File to read must have proper root element.\n \
+           Should be a file that contains <weaponBlueprint> elements.\n")
+    reading = input("Enter name of file in this directory to read from:\n")
 
     with open(reading, 'r') as reading_file:
         tree = ElementTree.parse(reading_file)
         root = tree.getroot()
-
-        writing = input("Enter name of new file name to write to.\n")
+        
+        print("(Be sure to rename the following file to blueprints.xml.append or dlcBlueprints.xml.append)\n")
+        writing = input("Enter name of new file name to write to:\n")
         with open(writing, 'w') as writing_file:
             xmlize(root, writing_file)
