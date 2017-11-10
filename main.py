@@ -61,7 +61,7 @@ def xmlize(event_root, writer):
 
 if __name__ == '__main__':
     print("FTL modding: See Weapon Description on HUD\n")
-    print("Notes:\nFile to read must have proper root element.\nShould be a file that contains <weaponBlueprint> elements.\n")
+    print("Notes:\nFile to read must have a proper root element, and is an XML file that contains <weaponBlueprint> elements.\n")
     reading = input("Enter name of file in this directory to read from:\n")
 
     with open(reading, 'r') as reading_file:
