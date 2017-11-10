@@ -1,5 +1,5 @@
 # FTL modding: See a weapon's description on the main HUD.
-This program assumes you are familiar with Advanced Slipstream tags and creating mods with proper folder hierarchy and whatnot.
+This readme and program assume you are familiar with Advanced Slipstream tags and creating mods with proper folder hierarchy and whatnot.
 
 For use with FTL: Faster Than Light blueprints.xml-type files.
 
