@@ -1,4 +1,6 @@
 # FTL modding: See a weapon's description on the main HUD.
+**Note:** Not valid for FTL 1.6.1+. The junk character is no longer needed and only a new line is needed. It also seems that new lines via the new line character \n can be implemented by referring to <text> elements in text\_blueprints.xml
+
 This readme and program assume you are familiar with Advanced Slipstream tags and creating mods with proper folder hierarchy and whatnot.
 
 For use with FTL: Faster Than Light blueprints.xml-type files.
